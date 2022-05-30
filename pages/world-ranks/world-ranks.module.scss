@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+
+.worldRanks {
+  display: grid;
+  grid-template-columns: 120px 1fr 120px;
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 39px;
+  }
+
+  &__container {
+    grid-column: 2/3;
+  }
+
+  &__search {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 60px;
+    &-form {
+      width: 570px;
+      height: 52px;
+      background-color: $col-grey;
+      padding: 0px 13px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      &-input {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 200%;
+        color: $col-grey-2;
+      }
+    }
+  }
+}
