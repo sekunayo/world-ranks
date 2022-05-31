@@ -1,8 +1,10 @@
 @import "../../styles/variables";
 
 .worldRanks {
+  background-color: $col-grey-4;
   display: grid;
   grid-template-columns: 120px 1fr 120px;
+  min-height: 100vh;
   &__header {
     display: flex;
     justify-content: center;
@@ -14,12 +16,25 @@
     grid-column: 2/3;
   }
 
+  &__table {
+    margin-top: 63px;
+  }
+
   &__search {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
     margin-top: 60px;
+
+    &-details {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 200%;
+      color: $col-grey-2;
+    }
+
     &-form {
       width: 570px;
       height: 52px;
@@ -36,7 +51,11 @@
         font-weight: 500;
         font-size: 1rem;
         line-height: 200%;
-        color: $col-grey-2;
+        color: $col-black;
+
+        &::placeholder {
+          color: $col-grey-2;
+        }
       }
     }
   }

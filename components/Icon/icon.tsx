@@ -10,7 +10,7 @@ interface IconProps {
 const Icon: React.FC<IconProps> = ({ icon }) => {
   return (
     <span
-      className="icon"
+      className={styles["icon"]}
       data-icon="true"
       dangerouslySetInnerHTML={{ __html: icons[icon] }}
     />

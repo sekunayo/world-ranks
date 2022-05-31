@@ -1,10 +1,23 @@
-import type { NextPage } from 'next'
-import WorldRanks from './world-ranks'
+import type { NextPage } from "next";
+import Head from "next/head";
+import FormContextProvider from "../context/CountryProvider";
+import WorldRanks from "./world-ranks";
 
 const Home: NextPage = () => {
   return (
-    <WorldRanks/>
-  )
-}
+    <>
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins"
+        />
+      </Head>
 
-export default Home
+      <FormContextProvider>
+        <WorldRanks />
+      </FormContextProvider>
+    </>
+  );
+};
+
+export default Home;
