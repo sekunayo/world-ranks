@@ -1,0 +1,27 @@
+@import "../../styles/variables";
+
+.table {
+  display: flex;
+  flex-direction: column;
+
+  &__container{
+      margin-top: 16px;
+      display: grid;
+      grid-template-rows: repeat(auto-fit,auto);
+      grid-row-gap: 20px;
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    &-item {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 200%;
+      color: $col-grey-3;
+      text-align: center;
+    }
+  }
+}
