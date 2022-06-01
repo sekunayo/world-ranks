@@ -5,12 +5,6 @@
   display: grid;
   grid-template-columns: 120px 1fr 120px;
   min-height: 100vh;
-  &__header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 39px;
-  }
 
   &__container {
     grid-column: 2/3;

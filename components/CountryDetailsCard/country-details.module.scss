@@ -1,0 +1,104 @@
+@import "../../styles/variables";
+
+.countryDetailsCard {
+  width: 100%;
+  height: auto;
+  background-color: $col-white;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding-top: 30px;
+  padding-bottom: 49px;
+
+  &__neighbouring {
+    margin-top: 49px;
+    padding: 0px 40px;
+
+    &-countries {
+      display: grid;
+      grid-template-rows: repeat(auto-fit, auto);
+      grid-template-columns: repeat(auto-fit, minmax(78.5px, 1fr));
+      gap: 28px;
+      &-item {
+        &-image {
+          width: 78.5px;
+          height: 58.01px;
+          border-radius: 4px;
+          position: relative;
+
+          & span {
+            width: 78.5px;
+            height: 58.01px;
+            border-radius: 4px;
+          }
+
+          & img {
+            min-width: 100% !important;
+            height: 100% !important;
+            border-radius: 4px;
+            object-fit: cover;
+          }
+        }
+
+        &-name {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 200%;
+          color: $col-primary;
+        }
+      }
+    }
+
+    &-heading {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 200%;
+      color: $col-grey-6;
+      margin-bottom: 23px;
+    }
+  }
+
+  &__heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 200%;
+    color: $col-black;
+    margin-left: 40px;
+    margin-bottom: 23px;
+  }
+
+  &__list {
+    &-item {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 40px;
+      width: 100%;
+      border-top: 1px solid $col-grey-6;
+      border-bottom: 1px solid $col-grey-6;
+
+      & h6 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 200%;
+        color: $col-grey-3;
+      }
+
+      & p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 200%;
+        color: $col-primary;
+      }
+
+      &:first-child {
+        border-top: none;
+      }
+    }
+  }
+}

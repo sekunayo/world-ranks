@@ -8,12 +8,20 @@ $col-black: #000;
 $col-grey: #eef3f6;
 $col-grey-2: #b3c5cd;
 $col-grey-3: #b9c9d1;
-$col-grey-4: #FAFAFA;
+$col-grey-4: #fafafa;
 $col-grey-5: #f2f5f7;
+$col-grey-6: #e0e0e0;
 
 //primary colors
-$col-primary : #124a63;
+$col-primary: #124a63;
 $col-primary-2: #21b6b7;
 
 //fonts
-$font : "Poppins", sans-serif;
+$font: "Poppins", sans-serif;
+
+//opaque-colors
+$black-opaque: rgba(0, 0, 0, 0.05);
+
+//dark-colors
+$col-dark : #333;
+

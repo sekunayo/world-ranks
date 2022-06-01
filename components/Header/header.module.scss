@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 39px;
+
+  &-logo{
+    cursor: pointer;
+  }
+}

@@ -12,7 +12,7 @@ html{
 
 body {
   min-height: 100vh;
-  font-family: "Poppins";
+  font-family: "Poppins",sans-serif;
   text-rendering: optimizeSpeed;
 }
 
@@ -41,4 +41,8 @@ p {
 
 ul li {
   list-style-type: none;
+}
+
+button{
+  background-color: transparent;
 }

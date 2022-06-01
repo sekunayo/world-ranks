@@ -4,6 +4,7 @@ import { Table } from "../../components/Table";
 import { fetchCountries } from "../../lib/apis";
 import { BiSearchAlt } from "react-icons/bi";
 import styles from "./world-ranks.module.scss";
+import Header from "../../components/Header";
 
 const WorldRanks = () => {
   const [searchValue, setSearchValue] = useState("");
@@ -57,11 +58,7 @@ const WorldRanks = () => {
   return (
     <div className={styles["worldRanks"]}>
       <div className={styles["worldRanks__container"]}>
-        <div className={styles["worldRanks__header"]}>
-          <div className={styles["worldRanks__header-logo"]}>
-            <Icon icon="logo" />
-          </div>
-        </div>
+        <Header />
 
         <div className={styles["worldRanks__search"]}>
           <p className={styles["worldRanks__search-details"]}>
